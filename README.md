@@ -8,3 +8,7 @@ To show all containers use the given command:
 ```
 docker ps -a
 ```
+### list images:
+```
+docker images
+```
