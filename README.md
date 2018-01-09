@@ -2,7 +2,7 @@
 ### list containers:
 To show only running containers use the given command:
 ```
-docker ps # test
+docker ps  
 ```
 To show all containers use the given command:
 ```
