@@ -106,6 +106,6 @@ docker pull user_id/image_id
 ### Build and run:
 ```
 > docker build -t mydemos:aspnetcorehelloworld .
-
 > docker run -d -p 8080:5000 -t mydemos:aspnetcorehelloworld
+> curl localhost:8080
 ```
