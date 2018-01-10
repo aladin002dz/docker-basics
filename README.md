@@ -11,12 +11,12 @@
 ## Docker usual commands
 ### Remove Image
 ```
-> docker rmi image_code
+> docker rmi image_id
 ```
 
 ### Remove Container
 ```
-> docker rm container_code
+> docker rm container_id
 ```
 
 ### list runnning containers:
@@ -26,14 +26,44 @@
 
 ### stop a running docker container:
 ```
-> docker stop image_code
+> docker stop container_id
 ```
 
-### browse docker files:
+### browse running container files:  
 ```
-> docker exec -it container_code bash
+> docker exec -it container_id bash	
 ```
 
+### check if docker is running:   
+```
+> docker run hello-world
+```
+
+If you are getting error, first go and check the docker daemon is running or not,  
+```
+> service docker status
+```
+
+if not running start the docker by running,  
+```
+> service docker start
+```
+
+### troubleshooting exited container:  
+```
+docker logs container_id
+```
+
+### browse image files:  
+```
+docker run --rm -it --entrypoint=/bin/bash image_id
+```
+
+### stop and delete all containers:  
+```
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
 
 ## Example Docker with ASP.NET Core:
 ### Make app using .net core:
