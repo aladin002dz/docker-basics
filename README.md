@@ -1,10 +1,10 @@
 # Docker basics:
 ## Terms:
 **Image:** ordered collection of root filesystem changes and the corresponding execution parameters
- for use within a container runtime. Images are read-only:
+ for use within a container runtime. Images are read-only:  
 	- https://docs.docker.com/glossary/?term=image
 	
-**Container:** active (or inactive if exited) stateful instantiation of an image:
+**Container:** active (or inactive if exited) stateful instantiation of an image:  
 	- https://docs.docker.com/glossary/?term=container
 
 
