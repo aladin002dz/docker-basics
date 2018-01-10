@@ -65,6 +65,17 @@ docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```
 
+### upload images to docker hub:  
+```
+docker login
+docker push user_id/image_id
+```
+### download images from docker hub: 
+```
+docker login
+docker pull user_id/image_id
+```
+
 ## Example Docker with ASP.NET Core:
 ### Make app using .net core:
 ```
